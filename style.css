@@ -110,7 +110,7 @@
 
 .main-container__2{
 	width: 100%;
-	height: 55px;
+	height: 65px;
 	border: 1px solid gray;
 	background: #F6F6F6;
 	position: relative;
@@ -140,4 +140,17 @@
 
 .main-container__2--operator select{
 	width: 40px;
+}
+
+
+.main-container__2--enter button{
+	vertical-align: middle;
+	height: 20px;
+	width: 20px;
+	background: transparent;
+	border:2px solid black;
+	border-radius: 50%;
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
 }
