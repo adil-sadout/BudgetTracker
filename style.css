@@ -170,7 +170,7 @@
 	text-align: left;
 	display: inline-block;
 	padding: 30px;
-	width: 30%;
+	width: 40%;
 }
 
 
@@ -212,13 +212,13 @@
 .main-container__3--stat-expense p .stat-label1{
 	position: absolute;
 	color: #FF4741;
-	right: 15%;
+	right: 18%;
 	border: none;
 }
 
 .main-container__3--stat-expense p .stat-label2{
 	position: absolute;
-	right: 0;
+	right: 5%;
 	border: none;
 	font-size: 0.8rem;
 	background: #FBD6D4;
@@ -253,4 +253,35 @@
 
 .last-value{
 	background-color: #F6F6F6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+	.main-container__3--stat div{
+		display: block;
+		margin: auto;
+		width: 70%;
+	}
+
+
 }
