@@ -120,7 +120,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	
+	width: 100%;
+	text-align: center;
 }
 
 .main-container__2 div{
@@ -131,6 +132,7 @@
 
 .main-container__2 input{
 	text-indent: 5px;
+	width: 100%;
 }
 
 .main-container__2 input, .main-container__2--operator select{
@@ -277,6 +279,28 @@
 
 @media only screen and (max-width: 1024px){
 
+	.main-container__1--center{
+		padding: 50px 20px;
+	}
+
+	.main-container__1--button button{
+		width: 60%;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	.main-container__3--stat div{
 		display: block;
 		margin: auto;
@@ -284,4 +308,38 @@
 	}
 
 
+}
+
+
+
+@media only screen and (max-width: 600px){
+	.main-container__1--button button{
+		width: 80%;
+
+	}
+
+
+	.main-container__1--button button{
+		width: 95%;
+
+	}
+
+	.label2 {
+    right: 2%;
+	}
+
+	.main-container__3--stat div{
+		width: 95%;
+	}
+
+	.main-container__3--stat-expense p .stat-label2{
+		right: 1%;
+	}
+
+	.main-container__2--input{
+		width: 30%;
+	}
+	.main-container__2--value{
+		width: 30%;
+	}
 }
