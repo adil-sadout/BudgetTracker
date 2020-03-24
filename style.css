@@ -2,10 +2,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'helvetica', sans-serif;
+	font-weight: lighter;
 }
-
-
-
 
 
 /*First Container*/
@@ -24,7 +23,7 @@
 	padding: 50px;
 	color: white;
 	font-weight: lighter;
-	font-family: 'helvetica', sans-serif;
+	
 }
 
 .main-container__1--center div{
@@ -153,4 +152,105 @@
 	color: black;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+
+/*Third Container*/
+
+.main-container__3{
+	/*background: gray;*/
+}
+
+.main-container__3--stat{
+	text-align: center;
+}
+
+
+.main-container__3--stat div{
+	text-align: left;
+	display: inline-block;
+	padding: 30px;
+	width: 30%;
+}
+
+
+.main-container__3--stat-income h3{
+	color: #25B1AC;
+}
+
+
+.main-container__3--stat-expense h3{
+	color: #FF4741;
+}
+
+
+.main-container__3--stat div *{
+	padding: 10px 0;
+	border-bottom: 1px solid lightgray;
+}
+
+.main-container__3--stat div p{
+	position: relative;
+	text-indent: 10px;
+}
+
+.main-container__3--stat div p label{
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(0,-50%);
+	font-weight: bold;
+}
+
+.main-container__3--stat-income p label{
+	border: none;
+	color: #25B1AC;
+}
+
+
+
+.main-container__3--stat-expense p .stat-label1{
+	position: absolute;
+	color: #FF4741;
+	right: 15%;
+	border: none;
+}
+
+.main-container__3--stat-expense p .stat-label2{
+	position: absolute;
+	right: 0;
+	border: none;
+	font-size: 0.8rem;
+	background: #FBD6D4;
+	border-radius: 3px;
+	padding: 0;
+
+	text-indent: 0;
+	text-align: center;
+	padding: 5px;
+	color: #FF4741;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*For js*/
+
+.last-value{
+	background-color: #F6F6F6;
 }
