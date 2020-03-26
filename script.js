@@ -13,14 +13,13 @@ var fullexpense=0;
 var fullincome=0;
 
 document.querySelector('.value-button').addEventListener('click', masterFunction);
-//var pdelete = document.querySelectorAll('.main-container__3--stat p');
 
+/*
 
-
-
-
-
-
+//apply hover effect to default <p>
+var pdelete = document.querySelectorAll('.main-container__3--stat p');
+deleteAbleObject(pdelete);
+*/
 
 
 
@@ -71,7 +70,6 @@ function createBudgetObject(){
 
 
 function addBudgetObjectToList(budgetObject){
-
     para = document.createElement("p");
     lbl = document.createElement("label");
     let value = parseFloat(budgetObject.value).toFixed(2);
@@ -120,25 +118,31 @@ function calculateFullBudget(object){
     document.getElementsByClassName("main-container__1--budget-cash")[0].textContent= fullbudget.toFixed(2);
 }
 
-
+/*
 
 function getP(){
     return document.querySelectorAll('.main-container__3--stat p');
 }
 
 
-
-
+*/
+/*
 function deleteAbleObject(pdelete){
+    
     for (let r = 0; r < pdelete.length; r++) {
+        pdeletebtn = document.getElementsByClassName('deletestatbtn');
         pdelete[r].addEventListener("mouseover", function() {
-          console.log("you clicked region number " + r);
-          pdelete[r].classList.add("remove");
+            console.log("you clicked region number " + r);
+            pdelete[r].classList.toggle("remove");
+            pdeletebtn[r].style.display = "inline-block";
         });
         pdelete[r].addEventListener("mouseout", function() {
             console.log("you clicked region number " + r);
-            pdelete[r].classList.remove("remove");
+            pdelete[r].classList.toggle("remove");
+            pdeletebtn[r].style.display = "none";
           });
       }
     
 }
+
+*/

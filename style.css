@@ -187,15 +187,19 @@
 .main-container__3--stat div *{
 	padding: 10px 0;
 	border-bottom: 1px solid lightgray;
-}
-
-.main-container__3--stat div p{
-	position: relative;
-	text-indent: 10px;
 	vertical-align: middle;
 }
 
+.main-container__3--stat div p{
+	
+	position: relative;
+	text-indent: 10px;
+	
+}
 
+#main-container__3--stat-expense p{
+	vertical-align: middle;
+}
 
 
 .main-container__3--stat div p label{
@@ -263,17 +267,22 @@
 	background-color: rgb(247, 204, 196);
 }
 
-.remove::before{
-	content: "x";
-
-	margin-right: 10px;
-	padding: 5px;
+.deletestatbtn{
+	cursor: pointer;
+	margin:0px 10px 0 0;
+	height: 0px;
+	width: 20px;
+	border: none;
+	vertical-align: middle;
 	background-color:rgb(199, 53, 53);
 	color: white;
-	font-weight: bolds;
-	border-radius: 10px;
+	font-weight: bold;
+	border-radius: 3px;
 }
 
+.main-container__3--stat div p button{
+	display: none;
+}
 
 
 
