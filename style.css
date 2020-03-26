@@ -51,7 +51,7 @@
 }
 
 .main-container__1--button button{
-	
+	pointer-events: none;
 	position: relative;
 	width: 300px;
 	height: 40px;
