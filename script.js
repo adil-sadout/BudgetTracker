@@ -4,43 +4,50 @@ var getBudget = function(operat, descr, value){
     this.descr = descr;
     this.value = value;
 }
-
-i=0;
-k=0;
-
-fullincome=0;
-fullexpense=0;
-fullbudget=0;
-
-var incomeArray =[];
+var i=0;
+var k =0;
+var incomeArray=[];
 var expenseArray =[];
-
-
-
-
-
-
-
+var fullbudget=0;
+var fullexpense=0;
+var fullincome=0;
 
 document.querySelector('.value-button').addEventListener('click', masterFunction);
+//var pdelete = document.querySelectorAll('.main-container__3--stat p');
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FUNCTIONS
 
 function masterFunction(){
     object = createBudgetObject();
     addBudgetObjectToList(object);
     calculateFullBudget(object);
+    deleteAbleObject(getP());
 }
-
-
-
-
-
-
 
 
 function createBudgetObject(){
@@ -59,14 +66,8 @@ function createBudgetObject(){
         k++;
     }
     return budget;
+    
 }
-
-
-
-
-
-
-
 
 
 function addBudgetObjectToList(budgetObject){
@@ -91,7 +92,12 @@ function addBudgetObjectToList(budgetObject){
         para.appendChild(lbl);
         elem1.appendChild(para);
     }
+    
+    console.log(para);
 }
+
+
+
 
 
 function calculateFullBudget(object){
@@ -116,7 +122,23 @@ function calculateFullBudget(object){
 
 
 
+function getP(){
+    return document.querySelectorAll('.main-container__3--stat p');
+}
 
 
 
 
+function deleteAbleObject(pdelete){
+    for (let r = 0; r < pdelete.length; r++) {
+        pdelete[r].addEventListener("mouseover", function() {
+          console.log("you clicked region number " + r);
+          pdelete[r].classList.add("remove");
+        });
+        pdelete[r].addEventListener("mouseout", function() {
+            console.log("you clicked region number " + r);
+            pdelete[r].classList.remove("remove");
+          });
+      }
+    
+}
