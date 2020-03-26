@@ -359,3 +359,27 @@
 		width: 30%;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-5%);
+        opacity: 0.2;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+.main-container{
+    animation: yourAnimation .3s 1 .1s ease-in;
+}
