@@ -19,13 +19,13 @@
 				<div class="main-container__1--button">
 					<button class="main-container__1--button-income">
 						INCOME
-						<label class="label1">
+						<label class="income-label1">
 							+ 2,354
 						</label>
 					</button>
 					<button class="main-container__1--button-expense">
 						EXPENSES
-						<label class="label1">
+						<label class="expense-label1">
 							- 5,456
 						</label>
 						<label class="label2">
@@ -43,24 +43,24 @@
 		<div class="main-container__2">
 			<div class="main-container__2--center">
 				<div class="main-container__2--operator">
-					<select>
-						<option class="main-container__2--operator-plus">
+					<select id="main-container__2--operator-select">
+						<option value="+">
 							+
 						</option>
-						<option class="main-container__2--operator-minus">
+						<option value="-">
 							-
 						</option>
 					</select>
 					
 				</div>
 				<div class="main-container__2--input">
-					<input type="text" name="input" placeholder="Description">
+					<input type="text" name="input" id="input-description" placeholder="Description">
 				</div>
 				<div class="main-container__2--value">
-					<input type="text" name="value" placeholder="Value">
+					<input type="number" name="value" id="input-value" placeholder="Value">
 				</div>
 				<div class="main-container__2--enter">
-					<button>✔</button>
+					<button class="value-button">✔</button>
 				</div>
 			</div>
 		</div>
@@ -71,11 +71,12 @@
 
 		<div class="main-container__3">
 			<div class="main-container__3--stat">
-				<div class="main-container__3--stat-income">
+				<div id="main-container__3--stat-income">
 
 					<h3>INCOME</h3>
-
-					<p>How's
+					
+					<p>
+						How's
 						<label>+2,210</label>
 					</p>
 
@@ -85,7 +86,7 @@
 					</p>
 
 				</div>
-				<div class="main-container__3--stat-expense">
+				<div id="main-container__3--stat-expense">
 
 					<h3>EXPENSES</h3>
 

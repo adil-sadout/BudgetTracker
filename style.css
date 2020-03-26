@@ -75,7 +75,7 @@
 	
 }
 
-.label1{
+.expense-label1,.income-label1{
 	right: 20%;
 	font-size: 1.3rem;
 	font-weight: lighter;
@@ -170,15 +170,16 @@
 	display: inline-block;
 	padding: 30px;
 	width: 40%;
+	vertical-align: top;
 }
 
 
-.main-container__3--stat-income h3{
+#main-container__3--stat-income h3{
 	color: #25B1AC;
 }
 
 
-.main-container__3--stat-expense h3{
+#main-container__3--stat-expense h3{
 	color: #FF4741;
 }
 
@@ -191,7 +192,11 @@
 .main-container__3--stat div p{
 	position: relative;
 	text-indent: 10px;
+	vertical-align: middle;
 }
+
+
+
 
 .main-container__3--stat div p label{
 	position: absolute;
@@ -201,21 +206,21 @@
 	font-weight: bold;
 }
 
-.main-container__3--stat-income p label{
+#main-container__3--stat-income p label{
 	border: none;
 	color: #25B1AC;
 }
 
 
 
-.main-container__3--stat-expense p .stat-label1{
+#main-container__3--stat-expense p .stat-label1{
 	position: absolute;
 	color: #FF4741;
 	right: 18%;
 	border: none;
 }
 
-.main-container__3--stat-expense p .stat-label2{
+#main-container__3--stat-expense p .stat-label2{
 	position: absolute;
 	right: 5%;
 	border: none;
@@ -254,6 +259,20 @@
 	background-color: #F6F6F6;
 }
 
+.remove{
+	background-color: rgb(247, 204, 196);
+}
+
+.remove::before{
+	content: "x";
+
+	margin-right: 10px;
+	padding: 5px;
+	background-color:rgb(199, 53, 53);
+	color: white;
+	font-weight: bolds;
+	border-radius: 10px;
+}
 
 
 
@@ -329,7 +348,7 @@
 		width: 95%;
 	}
 
-	.main-container__3--stat-expense p .stat-label2{
+	#main-container__3--stat-expense p .stat-label2{
 		right: 1%;
 	}
 
